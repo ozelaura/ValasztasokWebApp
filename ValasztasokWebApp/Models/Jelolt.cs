@@ -2,10 +2,11 @@
 {
     public class Jelolt
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Nev { get; set; }
         public int Kerulet { get; set; }
         public int Szavazatokszama { get; set; }
-        public Part Part { get; set; } //Idegen kulcs
+        public string PartRovidNev { get; set; }
+        public virtual Part Part { get; set; } //Idegen kulcs
     }
 }
